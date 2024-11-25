@@ -75,8 +75,8 @@ class TestWordpressLogin:
 
         expected_answer_urls = [
             "https://smoothmaths.co.uk/13-plus-schools/reigate-grammer-school/entrance-examination-mathematics-2018-answer-paper/",
-            "https://smoothmaths.co.uk/13-plus-schools/reigate-grammer-school/entrance-examination-mathematics-calculator-sample-answer-paper",
-            "https://smoothmaths.co.uk/13-plus-schools/reigate-grammer-school/entrance-examination-mathematics-non-calculator-sample-answer-paper"
+            "https://smoothmaths.co.uk/13-plus-schools/reigate-grammer-school/entrance-examination-mathematics-calculator-sample-answer-paper/",
+            "https://smoothmaths.co.uk/13-plus-schools/reigate-grammer-school/entrance-examination-mathematics-non-calculator-sample-answer-paper/"
         ]
 
         answer_paper_locators = [
