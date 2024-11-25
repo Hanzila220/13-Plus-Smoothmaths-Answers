@@ -85,7 +85,7 @@ class TestWordpressLogin:
         # Expected URLs for each answer paper
         expected_answer_urls = [
             "https://smoothmaths.co.uk/13-plus-schools/alleyns-school/13-maths-sample-examination-1-answer-paper/",
-            "https://smoothmaths.co.uk/13-plus-schools/alleyns-school/13-maths-sample-examination-2-answer-paper"
+            "https://smoothmaths.co.uk/13-plus-schools/alleyns-school/13-maths-sample-examination-2-answer-paper/"
         ]
         
 
