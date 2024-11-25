@@ -59,6 +59,9 @@ jobs:
 
       - name: Run Sevenoaks School tests
         run: pytest test_SevenoaksAnswers.py  --tb=short --junitxml=results.xml
+
+      - name: Run John lyon School tests
+        run: pytest test_JohnLyonAnswers.py  --tb=short --junitxml=results.xml
             
       # Upload screenshots
       - name: Upload screenshots
