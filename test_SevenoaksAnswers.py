@@ -93,7 +93,7 @@ class TestWordpressLogin:
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2012/",
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2011-answer-paper/",
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-sample-paper-mathematics-answer-paper/",
-            "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-sample-paper-mathematics-answer-paper-2"
+            "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-sample-paper-mathematics-answer-paper-2/"
         ]
         
 
