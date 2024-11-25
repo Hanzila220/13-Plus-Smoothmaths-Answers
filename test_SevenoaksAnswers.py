@@ -86,7 +86,7 @@ class TestWordpressLogin:
         expected_answer_urls = [
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2018-answer-paper/",
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2017-answer-paper/",
-            "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-mathematics-answer-paper/".
+            "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-mathematics-answer-paper/",
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2015-answer-paper/",
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2014-answer-paper/",
             "https://smoothmaths.co.uk/13-plus-schools/sevenoaks-school/year-9-13-entrance-examination-2013-answer-paper/",
