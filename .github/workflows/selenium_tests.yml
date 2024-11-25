@@ -57,11 +57,14 @@ jobs:
       # - name: Run Reigate Grammar School tests
       #   run: pytest test_ReigateGrammarAnswers.py  --tb=short --junitxml=results.xml
 
-      - name: Run Sevenoaks School tests
-        run: pytest test_SevenoaksAnswers.py  --tb=short --junitxml=results.xml
+      # - name: Run Sevenoaks School tests
+      #   run: pytest test_SevenoaksAnswers.py  --tb=short --junitxml=results.xml
 
-      - name: Run John lyon School tests
-        run: pytest test_JohnLyonAnswers.py  --tb=short --junitxml=results.xml
+      # - name: Run John lyon School tests
+      #   run: pytest test_JohnLyonAnswers.py  --tb=short --junitxml=results.xml
+
+      - name: Run Perse Upper School tests
+        run: pytest test_PerseUpperAnswers.py  --tb=short --junitxml=results.xml
             
       # Upload screenshots
       - name: Upload screenshots
