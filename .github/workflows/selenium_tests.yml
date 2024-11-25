@@ -24,11 +24,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install selenium pytest webdriver-manager pandas
 
-      # - name: Run Aldenham School tests
-      #   run: pytest test_AldenhamAnswers.py --tb=short --junitxml=results.xml
+      - name: Run Aldenham School tests
+        run: pytest test_AldenhamAnswers.py --tb=short --junitxml=results.xml
 
       - name: Run Alleyns School tests
         run: pytest test_AlleynsAnswers.py --tb=short --junitxml=results.xml
+
+      - name: Run Christs School tests
+        run: pytest test_ChristsAnswers.py --tb=short --junitxml=results.xml
             
       # Upload screenshots
       - name: Upload screenshots
