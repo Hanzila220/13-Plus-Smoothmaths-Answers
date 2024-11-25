@@ -48,8 +48,11 @@ jobs:
       # - name: Run Kent College tests
       #   run: pytest test_KentCollegeAnswers.py  --tb=short --junitxml=results.xml
 
-      - name: Run Kings College tests
-        run: pytest test_KingsCollege.py  --tb=short --junitxml=results.xml
+      # - name: Run Kings College tests
+      #   run: pytest test_KingsCollege.py  --tb=short --junitxml=results.xml
+
+      - name: Run Merchant Taylor School tests
+        run: pytest test_MerchantTaylorsAnswers.py  --tb=short --junitxml=results.xml
             
       # Upload screenshots
       - name: Upload screenshots
