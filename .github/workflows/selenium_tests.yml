@@ -42,8 +42,11 @@ jobs:
       # - name: Run Emanuel College tests
       #   run: pytest test_EmanuelAnswers.py  --tb=short --junitxml=results.xml
 
-      - name: Run Forest School tests
-        run: pytest test_ForestAnswers.py  --tb=short --junitxml=results.xml
+      # - name: Run Forest School tests
+      #   run: pytest test_ForestAnswers.py  --tb=short --junitxml=results.xml
+
+      - name: Run Kent College tests
+        run: pytest test_KentCollegeAnswers.py  --tb=short --junitxml=results.xml
             
       # Upload screenshots
       - name: Upload screenshots
