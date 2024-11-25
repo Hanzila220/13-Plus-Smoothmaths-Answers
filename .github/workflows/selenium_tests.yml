@@ -54,8 +54,11 @@ jobs:
       # - name: Run Merchant Taylor School tests
       #   run: pytest test_MerchantTaylorsAnswers.py  --tb=short --junitxml=results.xml
 
-      - name: Run Reigate Grammar School tests
-        run: pytest test_ReigateGrammarAnswers.py  --tb=short --junitxml=results.xml
+      # - name: Run Reigate Grammar School tests
+      #   run: pytest test_ReigateGrammarAnswers.py  --tb=short --junitxml=results.xml
+
+      - name: Run Sevenoaks School tests
+        run: pytest test_SevenoaksAnswers.py  --tb=short --junitxml=results.xml
             
       # Upload screenshots
       - name: Upload screenshots
