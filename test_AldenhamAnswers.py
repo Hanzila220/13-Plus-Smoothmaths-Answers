@@ -13,7 +13,7 @@ CSV_FILE_PATH = "test_results.csv"
 
 class TestWordpressLogin:
     def setup_method(self, method):
-        # Set up headless Chrome options for CI
+        # Set up Chrome options for CI and disable caching
         chrome_options = Options()
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
@@ -23,20 +23,25 @@ class TestWordpressLogin:
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--disable-popup-blocking")
         chrome_options.add_argument("--disable-notifications")
-        chrome_options.add_argument("--incognito")
+        chrome_options.add_argument("--incognito")  # Incognito mode prevents caching
         chrome_options.add_argument("window-size=1296,696")
+        chrome_options.add_argument("--disable-application-cache")  # Disable application cache
+        chrome_options.add_argument("--disk-cache-size=0")  # Set disk cache size to 0
         
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.set_page_load_timeout(90)
         self.driver.set_script_timeout(30)
         self.driver.implicitly_wait(10)
 
+        # Clear cookies before each test run to avoid session/cookie caching
+        self.driver.delete_all_cookies()
+        
         # Ensure screenshots directory exists
         if not os.path.exists("screenshots"):
             os.makedirs("screenshots")
         
         self.vars = {}
-  
+
     def teardown_method(self, method):
         self.driver.quit()
 
@@ -89,15 +94,12 @@ class TestWordpressLogin:
             "https://smoothmaths.co.uk/13-plus-schools/aldenham-school/13-entrance-paper-sample-paper-mathematics/"
         ]
         
-
-        
         # Locators for each answer paper
         answer_paper_locators = [ 
             (By.CSS_SELECTOR, ".et_pb_blurb_1.et_pb_blurb .et_pb_module_header a"),
             (By.CSS_SELECTOR, ".et_pb_blurb_4.et_pb_blurb .et_pb_module_header a"),
             (By.CSS_SELECTOR, ".et_pb_blurb_7.et_pb_blurb .et_pb_module_header a"),
         ]
-
 
         results = []
 
