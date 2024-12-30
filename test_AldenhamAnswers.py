@@ -79,8 +79,8 @@ class TestWordpressLogin:
 
         # Log in to WordPress
         self.driver.get("https://smoothmaths.co.uk/login/")
-        self.driver.find_element(By.ID, "user_login").send_keys("hanzila@dovidigital.com")
-        self.driver.find_element(By.ID, "user_pass").send_keys("Hanzila*183258")
+        self.driver.find_element(By.ID, "user_login").send_keys("Hanzilatesting")
+        self.driver.find_element(By.ID, "user_pass").send_keys("012hanzila")
         self.driver.find_element(By.ID, "wp-submit").click()
         
         # Open the target page
